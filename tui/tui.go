@@ -9,12 +9,12 @@ import (
 )
 
 func PrintCommands() {
-	fmt.Println("/help Print help message")
-	fmt.Println("/connect <IP:PORT> <CHAT_NAME> Create new connection/chat")
-	fmt.Println("/msg <CHAT_NAME> <MSG> Print help message")
-	fmt.Println("/create-group <GROUP_NAME> <CHAT_NAME...> Print help message")
-	fmt.Println("/msg-group <GROUP_NAME> <MSG> Print help message")
-	fmt.Println("/broadcast <MSG> Print message to all connections/chats")
+	fmt.Println("/help -> Print help message")
+	fmt.Println("/connect <IP:PORT> <CHAT_NAME> -> Create new chat")
+	fmt.Println("/msg <CHAT_NAME> <MSG> -> Send message to chat")
+	fmt.Println("/create-group <GROUP_NAME> <CHAT_NAME...> -> Create a group with the specified chats")
+	fmt.Println("/msg-group <GROUP_NAME> <MSG> -> Send message to group")
+	fmt.Println("/broadcast <MSG> -> Sned message to all chats")
 }
 
 func Start(username string, chConnections chan msg.ConnectionMsg) {
