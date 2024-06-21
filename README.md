@@ -17,4 +17,4 @@ A simple command based peer to peer chat written in go
 | /msg <CHAT_NAME> <MSG>                    | Send message to chat                          |
 | /create-group <GROUP_NAME> <CHAT_NAME...> | Create a group with the specified chats       |
 | /msg-group <GROUP_NAME> <MSG>             | Send message to group                         |
-| /broadcast                                | Send message to all chats                     |
+| /broadcast <MSG>                          | Send message to all chats                     |
